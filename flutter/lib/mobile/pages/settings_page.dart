@@ -1034,17 +1034,19 @@ void showThemeSettings(OverlayDialogManager dialogManager) async {
 void showAbout(OverlayDialogManager dialogManager) {
   dialogManager.show((setState, close, context) {
     return CustomAlertDialog(
-      title: Text(translate('About RustDesk')),
+      title: Text(translate('About FTECH VIEWER')),
       content: Wrap(direction: Axis.vertical, spacing: 12, children: [
+        Text('FTECH VIEWER'),
         Text('Version: $version'),
+        Text('Powered by RustDesk Open Source', style: TextStyle(fontSize: 12, color: Colors.grey)),
         InkWell(
             onTap: () async {
-              const url = 'https://rustdesk.com/';
+              const url = 'https://ftech.com/';
               await launchUrl(Uri.parse(url));
             },
             child: Padding(
               padding: EdgeInsets.symmetric(vertical: 8),
-              child: Text('rustdesk.com',
+              child: Text('ftech.com',
                   style: TextStyle(
                     decoration: TextDecoration.underline,
                   )),

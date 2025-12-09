@@ -1,11 +1,11 @@
 [package]
-name = "rustdesk"
-version = "1.4.4"
-authors = ["rustdesk <info@rustdesk.com>"]
+name = "ftech-viewer"
+version = "1.0.0"
+authors = ["FTECH <support@ftech.com>"]
 edition = "2021"
 build= "build.rs"
-description = "RustDesk Remote Desktop"
-default-run = "rustdesk"
+description = "FTECH VIEWER - F-TECH VIEW Remote Desktop"
+default-run = "ftech-viewer"
 rust-version = "1.75"
 
 [lib]
